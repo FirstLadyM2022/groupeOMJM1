@@ -142,56 +142,47 @@ dfposter = select[(select['poster_path'].notnull())]
 
 imagerandom = pd.DataFrame(dfposter[['poster_path', 'title']].sample(10))
 
-im1, im2, im3, im4, im5, im6, im7, im8, im9, im10= st.columns(10)
+im1, im2, im3, im4, im5 = st.columns(5)
+im6, im7, im8, im9, im10 = st.columns(5)
 
 with im1 :
-  for i in range(0,0) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[0,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im2 :
-  for i in range(1,1) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[1,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im3 :
-  for i in range(2,2) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[2,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
     
 with im4 :
-  for i in range(3) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[3,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im5 :
-  for i in range(4) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[4,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im6 :
-  for i in range(5) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[5,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im7 :
-  for i in range(6) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[6,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im8 :
-  for i in range(7) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[7,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im9 :
-  for i in range(8) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[8,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im10 :
-  for i in range(9) :
-    st.write(str(imagerandom.iloc[i,1]))
+    st.write(str(imagerandom.iloc[9,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 #st.write(imagerandom.iloc[i])
