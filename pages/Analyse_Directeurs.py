@@ -11,7 +11,7 @@ from PIL import Image
 st.subheader("Directeurs les Plus Présents dans notre dataset ")
 #diagrammes à barres interactif
 
-df6 = pd.read_csv(r"C:\Users\mirei\Desktop\WildSchool\Projet 2\dossier fait ensemble\Nombre de tconst par primaryName.csv")
+df6 = pd.read_csv("/app/groupeomjm1/pages/Nombre de tconst par primaryName.csv")
 
 
 
