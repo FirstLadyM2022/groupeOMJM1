@@ -14,8 +14,7 @@ with title2 :
 #####
 
 def main():
-    st.header("HOME PAGE")
-    st.title("Projet 2 -Recommandation de Film pour le cinéma de la Creuse")
+    st.header("HOME PAGE")   
 if __name__ == '__main__':
   main()
 
