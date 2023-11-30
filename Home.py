@@ -4,7 +4,7 @@ from PIL import Image
 st.set_page_config(layout="wide")
 
 def main():
-    st.titre("HOME PAGE")   
+    st.title("HOME PAGE")   
 if __name__ == '__main__':
   main()
 
