@@ -14,7 +14,7 @@ title1, title2 = st.columns([0.7, 0.3])
 with title1 :
   st.title('Projet 2 : Système de recommandation de films')
 with title2 :
-  "Olmira, Mireille, Maxime, Julie" 
+  "Julie, Mireille, Olmira, Maxime" 
   st.image('/app/groupeomjm1/pages/logo_WCS.png')
 
 #st.header("Données")
