@@ -14,7 +14,7 @@ with title2 :
 #####
 
 def main():
-    st.header(#"HOME PAGE"#)   
+    st.header("HOME PAGE")   
 if __name__ == '__main__':
   main()
 
