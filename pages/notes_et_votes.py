@@ -12,7 +12,7 @@ with title1 :
   st.title('Projet 2 : Système de recommandation de films')
 with title2 :
   "Olmira, Mireille, Maxime, Julie" 
-  st.image('logo_WCS.png')
+  st.image('/app/groupeomjm1/pages/logo_WCS.png')
 
 #####
 
@@ -27,7 +27,7 @@ st.write("Après un premier niveau de filtrage, nous vous proposons d'affiner la
 st.write("La sélection présentée ici répond aux critères suivants : Retrait des films pour adultes, année supérieure ou égale à 1980, version du film destinée à la France.")
 
 #Chargement du DataFrame étudié :
-df = pd.read_csv('final0.csv')
+df = pd.read_csv('/app/groupeomjm1/pages/final0.csv')
 df.drop(df.loc[df["genres"].str.contains('Adult')].index, inplace=True)
 df.drop(df.loc[df["genres"].str.contains('Game-Show')].index, inplace=True)
 df.drop(df.loc[df["genres"].str.contains('Reality-TV')].index, inplace=True)
