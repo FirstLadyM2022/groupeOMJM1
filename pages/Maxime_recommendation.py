@@ -21,7 +21,7 @@ if genre_entre_par_utilisateur:
     # Faire des prédictions pour le genre donné
     st.write(f"Recommandations de films par genre('{genre_entre_par_utilisateur}'):")
     for i in [0,1,2,3,4]:
-        st.write(df_result[df_result['Genre'] ==genre_entre_par_utilisateur][str(i)+" title"].values[0],", noté à ", df_result[df_result['Genre'] ==genre_entre_par_utilisateur][str(i)+" rating"].values[0] )
+        st.write(df_result[df_result['Genre'] ==genre_entre_par_utilisateur][str(i)+" title"].values[0],", noté à ", df_result[df_result['Genre'] ==genre_entre_par_utilisateur][str(i)+" rating"].values[0])
         #st.write(f"{row['primaryTitle']} : Note: {round(row['weightedScore'], 2)}")
 else:
     st.write(f"Veuillez rentrer le genre de film en anglais.")
