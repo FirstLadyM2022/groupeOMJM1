@@ -2,6 +2,18 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 
+st.set_page_config(layout="wide")
+
+title1, title2 = st.columns([0.7, 0.3])
+
+with title1 :
+  st.title('Projet 2 : Système de recommandation de films')
+with title2 :
+  "Olmira, Mireille, Maxime, Julie" 
+  st.image('/app/groupeomjm1/pages/logo_WCS.png')
+
+#####
+
 st.title("Recommandation")
 st.header("Objectif de la Recommandation")
 st.write("Bienvenue dans la section de recommandation de films ! Cette fonctionnalité permet aux utilisateurs de découvrir "
