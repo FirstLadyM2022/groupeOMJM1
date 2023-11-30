@@ -22,11 +22,12 @@ with title2 :
 
 df1 = pd.read_csv("/app/groupeomjm1/pages/Nombre de tconst par genres.csv")
 
+st.subheader("30 premiers genres de notre dataset")
 
 fig = px.bar( data_frame = df1, 
              x= "genres", 
              y= "Nombre de tconst",
-             title = "30 premiers genres de notre dataset",
+             #title = "30 premiers genres de notre dataset",
              color='genres',
              width=1000, height=600
 )
