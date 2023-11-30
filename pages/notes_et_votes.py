@@ -141,5 +141,44 @@ def main():
       stat['numVotes'] = stat['numVotes'].astype('int')
       stat = stat.set_axis(['Nombre de votes', 'Note moyenne'], axis = 1)
       stat
+
+
+dfposter = select[(select['poster_path'].notnull())]
+
+imagerandom = pd.DataFrame(dfposter[['poster_path', 'title']].sample(10))
+
+im1, im2, im3, im4, im5 = st.columns(5)
+
+with im1 :
+  for i in range(0,2) :
+    st.write(str(imagerandom.iloc[i,1]))
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+
+with im2 :
+  for i in range(2,4) :
+    st.write(str(imagerandom.iloc[i,1]))
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+
+with im3 :
+  for i in range(4,6) :
+    st.write(str(imagerandom.iloc[i,1]))
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    
+with im4 :
+  for i in range(6,8) :
+    st.write(str(imagerandom.iloc[i,1]))
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+
+with im5 :
+  for i in range(8,10) :
+    st.write(str(imagerandom.iloc[i,1]))
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+
+
+#st.write(imagerandom.iloc[i])
+#st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + imagerandom, width = 200)
+
+#for i, row in imagerandom.iterrows():
+#  st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + row['poster_path'], width = 200)
 if __name__ == '__main__':
     main()
