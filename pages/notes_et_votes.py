@@ -16,7 +16,7 @@ def main():
     with title2 :
       "Olmira, Mireille, Maxime, Julie" 
 
-    image = Image.open("logo_WCS.png")
+    image = Image.open("/app/groupeomjm1/pages/logo_WCS.png")
     st.image(image, caption='')
 
     #####
@@ -32,7 +32,7 @@ def main():
     st.write("La sélection présentée ici répond aux critères suivants : Retrait des films pour adultes, année supérieure ou égale à 1980, version du film destinée à la France.")
 
     #Chargement du DataFrame étudié :
-    df = pd.read_csv(r"C:\Users\mirei\Desktop\dossier streamlit\Projet2\final0.csv")
+    df = pd.read_csv("final0.csv")
     df.drop(df.loc[df["genres"].str.contains('Adult')].index, inplace=True)
     df.drop(df.loc[df["genres"].str.contains('Game-Show')].index, inplace=True)
     df.drop(df.loc[df["genres"].str.contains('Reality-TV')].index, inplace=True)
