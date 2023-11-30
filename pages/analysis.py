@@ -8,7 +8,7 @@ import plotly.express as px
 
 #diagrammes à barres interactif
 
-df1 = pd.read_csv("Nombre de tconst par genres.csv")
+df1 = pd.read_csv("/app/groupeomjm1/pages/Nombre de tconst par genres.csv")
 st.write(df1)
 
 fig = px.bar( data_frame = df1, 
