@@ -95,5 +95,5 @@ im1, im2, im3, im4, im5 = st.columns(5)
 #image = Image.open(r"C:\Users\mirei\Desktop\dossier streamlit\pages\Dolph Lundgren.jpeg")
 #st.image(image, caption='')
 
-"Dataset"
-st.write(df4)
+#"Dataset"
+#st.write(df4)
