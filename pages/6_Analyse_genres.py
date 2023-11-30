@@ -29,6 +29,7 @@ fig = px.bar( data_frame = df1,
              y= "Nombre de tconst",
              #title = "30 premiers genres de notre dataset",
              color='genres',
+             labels={'genres': "Genres", "Nombre de tconst" : "Films"},
              width=1000, height=600
 )
 st.plotly_chart(fig)
