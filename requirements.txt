@@ -6,3 +6,4 @@ streamlit==1.28.2
 scikit-learn
 plotly.express==0.4.1
 streamlit_lottie
+requests
