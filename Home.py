@@ -3,20 +3,22 @@ from PIL import Image
 
 st.set_page_config(layout="wide")
 
+def main():
+    st.titre("HOME PAGE")   
+if __name__ == '__main__':
+  main()
+
 title1, title2 = st.columns([0.7, 0.3])
 
 with title1 :
-  st.title('Projet 2 : Système de recommandation de films')
+  st.header('Projet 2 : Système de recommandation de films')
 with title2 :
   "Julie, Mireille, Olmira, Maxime" 
   st.image('/app/groupeomjm1/pages/logo_WCS.png')
 
 #####
 
-def main():
-    st.header("HOME PAGE")   
-if __name__ == '__main__':
-  main()
+
 
 A,B,C = st.columns([0.1,0.8,0.1])
 with B :
