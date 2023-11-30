@@ -32,24 +32,24 @@ with st.container():
 
         with col1:
 
-            image1 = Image.open(r"C:\Users\mirei\Desktop\dossier streamlit\Takashi.le1er.png")
+            image1 = Image.open("/app/groupeomjm1/pages/Takashi.le1er.png")
             st.image(image1 , caption='1er : Takashi Mikke')
 
         with col2 :
-            image2 = Image.open(r"C:\Users\mirei\Desktop\dossier streamlit\sed.2ieme.png")
+            image2 = Image.open("/app/groupeomjm1/pages/sed.2ieme.png")
             new_image2 = image2.resize((200, 200))
             st.image(new_image2, caption='2ième : Soderbergh Steven')
         
         with col3 :
-           image3 = Image.open(r"C:\Users\mirei\Desktop\dossier streamlit\FrancoisOzon.png")
+           image3 = Image.open("/app/groupeomjm1/pages/FrancoisOzon.png")
            new_image3 = image3.resize((200, 200))
            st.image(new_image3, caption='3ième : Ozon François')
         with col4 :
-             image4 = Image.open(r"C:\Users\mirei\Desktop\dossier streamlit\tsui.png")
+             image4 = Image.open("/app/groupeomjm1/pages/tsui.png")
              new_image4 = image4.resize((200, 200))
              st.image(new_image4, caption='4ième : Hark Tsui')
         with col5 :
-            image5 = Image.open(r"C:\Users\mirei\Desktop\dossier streamlit\hong sang soo.png")
+            image5 = Image.open("/app/groupeomjm1/pages/hong sang soo.png")
             st.image(image5, caption='5ième : Hong Sang-soo')
 
 
