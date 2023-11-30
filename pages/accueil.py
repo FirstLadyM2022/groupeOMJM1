@@ -7,7 +7,7 @@ from PIL import Image
 
 st.set_page_config(layout="wide")
 
-title1, title2 = st.columns(2)
+title1, title2 = st.columns(0.7,0.3)
 
 with title1 :
   st.title('Projet 2 : Système de recommandation de films')
