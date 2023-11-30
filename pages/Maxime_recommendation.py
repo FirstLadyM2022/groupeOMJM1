@@ -10,7 +10,7 @@ st.write("Bienvenue dans la section de recommandation de films ! Cette fonctionn
             "la diversité des recommandations et trouvez des films qui correspondent à vos goûts cinématographiques !")
 
 # Charger les données des films
-df_result = pd.read_csv(r"C:\Users\mirei\Desktop\dossier streamlit\PageMaxime\df_rec_maxime.csv", sep=',')
+df_result = pd.read_csv("df_rec_maxime.csv", sep=',')
 #df_result
 
 # Saisie de l'utilisateur pour le genre
