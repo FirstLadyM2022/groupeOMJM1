@@ -17,11 +17,11 @@ with title2 :
 #####
 
 
-st.title('Première partie : Analyse de données')
+st.subheader('Première partie : Analyse de données')
 
 st.write("Il nous a été demandé premièrement de nettoyer et analyser une base de données contenant les caractérisqtiques de nombreux films, et d'en extraire une selection à proposer à un cinéma Français en perte de vitesse.")
 
-st.title('Filtrer sur les notes et les votes attribués aux films')
+st.subheader('Filtrer sur les notes et les votes attribués aux films')
 
 st.write("Après un premier niveau de filtrage, nous vous proposons d'affiner la sélection en choisissant une note minimum ainsi qu'un nombre de votes minimum pour les films qui seront retenus.")
 st.write("La sélection présentée ici répond aux critères suivants : Retrait des films pour adultes, année supérieure ou égale à 1980, version du film destinée à la France.")
@@ -56,7 +56,7 @@ with col2_df :
 
 f"Précision : parmi ces films, {isna_['averageRating'][1]} n'ont pas de note. Ils seront donc ignorés dans l'analyse qui suit."
 
-st.title('Ajustement de la selection')
+st.subheader('Ajustement de la selection')
 
 "Nous vous proposons d'effectuer un ajustement par la note, le nombre de votes et éventuellement le genre, et visualiser l'impact de vos choix :"
 
@@ -82,7 +82,7 @@ if genre != "(tous)" :
 if genre == "(tous)" :
   select = df[(df['averageRating'] >= note) & (df['numVotes'] >= votes)]
 
-st.title('Statistiques visuelles pour votre sélection :')
+st.subheader('Statistiques visuelles pour votre sélection :')
 
 f"Les critères sélectionnés réduisent votre sélection à {select['tconst'].nunique()} films (liste sous les graphiques) :"
 
