@@ -16,6 +16,9 @@ with title2 :
 def main():
     st.header("HOME PAGE")
     st.title("Projet 2 -Recommandation de Film pour le cinéma de la Creuse")
+
+  A,B,C = st.columns(3)
+  with B :
     st.subheader("Wild Code School 2023")
     image = Image.open("notre affiche.png")
     st.image(image, caption='')
