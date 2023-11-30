@@ -147,43 +147,43 @@ im6, im7, im8, im9, im10 = st.columns(5)
 
 with im1 :
     st.write(str(imagerandom.iloc[0,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[0,0]), width = 200)
 
 with im2 :
     st.write(str(imagerandom.iloc[1,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[1,0]), width = 200)
 
 with im3 :
     st.write(str(imagerandom.iloc[2,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[2,0]), width = 200)
     
 with im4 :
     st.write(str(imagerandom.iloc[3,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[3,0]), width = 200)
 
 with im5 :
     st.write(str(imagerandom.iloc[4,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[4,0]), width = 200)
 
 with im6 :
     st.write(str(imagerandom.iloc[5,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[5,0]), width = 200)
 
 with im7 :
     st.write(str(imagerandom.iloc[6,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[6,0]), width = 200)
 
 with im8 :
     st.write(str(imagerandom.iloc[7,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[7,0]), width = 200)
 
 with im9 :
     st.write(str(imagerandom.iloc[8,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[8,0]), width = 200)
 
 with im10 :
     st.write(str(imagerandom.iloc[9,1]))
-    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
+    st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[9,0]), width = 200)
 
 #st.write(imagerandom.iloc[i])
 #st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + imagerandom, width = 200)
