@@ -21,7 +21,7 @@ st.title('Vous avez vu un film qui vous a plu?')
 
 st.write("On vous aidera de trouver les meilleurs films pareils!")
 
-df_test = pd.read_csv(r"C:\Users\mirei\Desktop\dossier streamlit\pages\filtered_data_images1.csv", sep=',')
+df_test = pd.read_csv("/app/groupeomjm1/pages/filtered_data_images1.csv", sep=',')
 #df_test
 
 def recommendation(nom_film):
