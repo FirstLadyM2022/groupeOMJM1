@@ -6,6 +6,18 @@ from PIL import Image
 from streamlit_lottie import st_lottie
 import requests
 
+st.set_page_config(layout="wide")
+
+title1, title2 = st.columns([0.7, 0.3])
+
+with title1 :
+  st.title('Projet 2 : Système de recommandation de films')
+with title2 :
+  "Olmira, Mireille, Maxime, Julie" 
+  st.image('/app/groupeomjm1/pages/logo_WCS.png')
+
+#####
+
 def render_animation():
     animation_response = requests.get('https://lottie.host/c17d5978-9bf0-4a87-8bdf-66dae56508f3/olQqpxxFMn.json')
     animation_json = dict()
