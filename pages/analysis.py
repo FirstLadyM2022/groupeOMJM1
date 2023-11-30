@@ -21,7 +21,7 @@ with title2 :
 #diagrammes à barres interactif
 
 df1 = pd.read_csv("/app/groupeomjm1/pages/Nombre de tconst par genres.csv")
-st.write(df1)
+
 
 fig = px.bar( data_frame = df1, 
              x= "genres", 
@@ -31,3 +31,7 @@ fig = px.bar( data_frame = df1,
              width=1000, height=600
 )
 st.plotly_chart(fig)
+
+
+st.write(df1)
+
