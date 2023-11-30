@@ -12,7 +12,7 @@ from PIL import Image
 st.subheader("Acteurs les Plus Présents dans notre dataset ")
 #diagrammes à barres interactifs
 
-df4 = pd.read_csv(r"C:\Users\mirei\Desktop\WildSchool\Projet 2\dossier fait ensemble\Nombre de count_y par primaryName.csv")
+df4 = pd.read_csv("/app/groupeomjm1/pages/Nombre de count_y par primaryName.csv")
 
 
 
