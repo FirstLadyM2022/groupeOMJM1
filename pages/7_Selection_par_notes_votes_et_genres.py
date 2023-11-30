@@ -145,17 +145,17 @@ imagerandom = pd.DataFrame(dfposter[['poster_path', 'title']].sample(10))
 im1, im2, im3, im4, im5, im6, im7, im8, im9, im10= st.columns(10)
 
 with im1 :
-  for i in range(0) :
+  for i in range(0,0) :
     st.write(str(imagerandom.iloc[i,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im2 :
-  for i in range(1) :
+  for i in range(1,1) :
     st.write(str(imagerandom.iloc[i,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
 
 with im3 :
-  for i in range(2) :
+  for i in range(2,2) :
     st.write(str(imagerandom.iloc[i,1]))
     st.image('https://image.tmdb.org/t/p/w600_and_h900_bestv2/' + str(imagerandom.iloc[i,0]), width = 200)
     
