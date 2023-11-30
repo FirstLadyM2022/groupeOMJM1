@@ -142,6 +142,8 @@ dfposter = select[(select['poster_path'].notnull())]
 
 imagerandom = pd.DataFrame(dfposter[['poster_path', 'title']].sample(10))
 
+imagerandom
+
 im1, im2, im3, im4, im5 = st.columns(5)
 im6, im7, im8, im9, im10 = st.columns(5)
 
