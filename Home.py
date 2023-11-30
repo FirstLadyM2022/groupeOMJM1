@@ -16,6 +16,8 @@ with title2 :
 def main():
     st.header("HOME PAGE")
     st.title("Projet 2 -Recommandation de Film pour le cinéma de la Creuse")
+if __name__ == '__main__':
+  main()
 
 A,B,C = st.columns([0.1,0.8,0.1])
 with B :
@@ -23,8 +25,7 @@ with B :
   image = Image.open("notre affiche.png")
   st.image(image, caption='')
 
-if __name__ == '__main__':
-    main()
+
 
 
 
