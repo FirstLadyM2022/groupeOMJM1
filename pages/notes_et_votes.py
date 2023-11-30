@@ -16,7 +16,7 @@ def main():
     with title2 :
       "Olmira, Mireille, Maxime, Julie" 
 
-    image = Image.open(r"C:\Users\mirei\Desktop\dossier streamlit\Projet2\logo_WCS.png")
+    image = Image.open("logo_WCS.png")
     st.image(image, caption='')
 
     #####
