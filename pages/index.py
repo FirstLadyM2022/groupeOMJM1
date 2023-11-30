@@ -5,8 +5,17 @@ import seaborn as sns
 #import matplotlib.pyplot as plt
 
 # Page Présentation
-st.title("Présentation du projet")
-st.markdown("*Projet réalisé par: Julie, Mireille, Olmira, Maxime.* Étudiants à la Wild Code School")
+st.set_page_config(layout="wide")
+
+title1, title2 = st.columns([0.7, 0.3])
+
+with title1 :
+  st.title('Projet 2 : Système de recommandation de films')
+with title2 :
+  "Olmira, Mireille, Maxime, Julie" 
+  st.image('/app/groupeomjm1/pages/logo_WCS.png')
+
+#####
 st.header("Sujet du Projet")
 st.write("Vous êtes un Data Analyst freelance. Un cinéma en perte de vitesse situé dans la Creuse vous contacte. "
             "Il a décidé de passer le cap du digital en créant un site Internet taillé pour les locaux. "
