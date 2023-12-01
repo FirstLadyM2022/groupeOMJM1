@@ -34,6 +34,8 @@ fig = px.bar( data_frame = df1,
 )
 st.plotly_chart(fig)
 
+st.image('/app/groupeomjm1/pages/collage movie.jpg')
+
 
 st.write(df1)
 
