@@ -31,6 +31,7 @@ fig = px.bar( data_frame = df1,
              color='genres',
              labels={'genres': "Genres", "Nombre de tconst" : "Films"},
              width=1000, height=600
+             fig.update_xaxes(tickangle=50)
 )
 st.plotly_chart(fig)
 
